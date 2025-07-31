@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="warning">Do not comment anything on Figma</div>
+    <div class="container">
+      <h2>YAY! It's BOGO</h2>
+
+      <form id="pricingForm">
+        <div class="option">
+          <label>
+            <input type="radio" name="unit" value="1" checked>
+            <span>1 Unit</span>
+            <span class="badge red">10% Off</span>
+            <span class="price">$10.00 USD</span>
+            <span class="original-price">$24.00 USD</span>
+          </label>
+        </div>
+
+        <div class="option popular">
+          <label>
+            <input type="radio" name="unit" value="2">
+            <span>2 Unit</span>
+            <span class="badge pink">20% Off</span>
+            <span class="price">$18.00 USD</span>
+            <span class="original-price">$24.00 USD</span>
+            <span class="most-popular">MOST POPULAR</span>
+          </label>
+
+          <div class="selections">
+            <div class="select-pair">
+              <label>#1</label>
+              <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Colour</option>
+              </select>
+            </div>
+            <div class="select-pair">
+              <label>#2</label>
+              <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <select>
+                <option>Colour</option>
+                <option>Black</option>
+                <option>White</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="option">
+          <label>
+            <input type="radio" name="unit" value="3">
+            <span>3 Unit</span>
+            <span class="badge green">30% Off</span>
+            <span class="price">$24.00 USD</span>
+            <span class="original-price">$24.00 USD</span>
+          </label>
+        </div>
+
+        <div class="footer">
+          <span class="delivery">Free Delivery</span>
+          <span class="total">Total: <strong id="totalPrice">$10.00 USD</strong></span>
+        </div>
+
+        <button type="button" id="addToCart">+ Add to Cart</button>
+        <p class="powered">Powered by Pumper</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>
